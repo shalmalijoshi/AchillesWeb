@@ -1266,14 +1266,18 @@ read_config();
 			</div>
 		</div>
 	</div>
-        <!--div id="Drug-Condition Co-occurrence Report" class="report">
-             <div class="panel-heading">
-                  Drug-Condition Co-occurrence
-             </div>
-             <div class="row">
-                   <?php require_once 'common.php';include('graph.php');?>                                       
-             </div>
-        </div-->
+        <div id="split-container">
+            <a class="btn btn-default nav-button" id="nav-list" href="list.php<?php echo $dataset_qs; ?>">
+                View list
+            </a>
+            <div id="graph-container">
+                <div id="graph"></div>
+            </div>
+            <div id="docs-container">
+                <a id="docs-close" href="#">&times;</a>
+                <div id="docs" class="docs"></div>
+            </div>
+        </div>
 </body>
 
 </html>
